@@ -49,19 +49,23 @@ const productos = [
 
 productos.forEach(prod => {
     divProductos.innerHTML +=
-        `<div class="card mb-3" style="max-width: 540px;">
+        `<div class="card m-3" style="max-width: 540px">
             <div class="row g-0">
                     <div class="col-md-4">
                         <img src="${prod.image}" class="img-fluid rounded-start" alt="${prod.nombre}">
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-8 grid text-center">
                         <div class="card-body">
-                            <h5 class="card-title">${prod.nombre}</h5>
-                            <p class="card-text">${prod.precio}</p>
-                            <p class="card-text"><small class="text-body-secondary">Unidades Disponibles:${prod.stock}</small></p>
-                            <button id=${prod.id} class="btn btn-primary">AGREGAR</button>
+                            <h5 class="card-title placeholder-wave">${prod.nombre}</h5>
+                            <p class="card-text ">Precio: $${prod.precio}</p>
+                            <p class="card-text"><small class="text-body-secondary">Unidades Disponibles: <b>${prod.stock}</b></small></p>
+                            <button id=${prod.id} class="btn btn-outline-dark placeholder-wave">Agregar</button>
                         </div>
                     </div>
             </div>
         </div>`
 })
+
+const carritos = []
+
+// const botonesAgregar = document.querySelectorAll
