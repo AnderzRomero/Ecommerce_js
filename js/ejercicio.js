@@ -20,7 +20,8 @@ formulario.onsubmit = (e) => {
 const infoUsuario = JSON.parse(localStorage.getItem('infoUsuario'))
 if (infoUsuario) {
     formulario.remove();
-    titulo.innerText = `Bienvenido ${infoUsuario.nombre} ${infoUsuario.apellido}`
+    titulo.innerText = `Bienvenido ${infoUsuario.nombre} ${infoUsuario.apellido}`   
+
 }
 
 //  clase
@@ -42,7 +43,7 @@ const productos = [
     new Producto(5, 'assets/img/AppleWatch.jpg', 'AppleWatch', 250, 2),
     new Producto(6, 'assets/img/Samsung Galaxy.jpg', 'Samsung Galaxy', 600, 15),
     new Producto(7, 'assets/img/Xiaomi.jpeg', 'Xiaomi', 500, 25),
-    new Producto(8, 'assets/img/Smart TV.jpg',  'Smart TV', 800, 12),
+    new Producto(8, 'assets/img/Smart TV.jpg', 'Smart TV', 800, 12),
     new Producto(9, 'assets/img/GoPro.jpeg', 'GoPro', 200, 10),
     new Producto(10, 'assets/img/Digital Camera.jpeg', 'Digital Camera', 550, 4)
 ]
@@ -67,5 +68,7 @@ productos.forEach(prod => {
 })
 
 const carritos = []
+
+
 
 // const botonesAgregar = document.querySelectorAll
