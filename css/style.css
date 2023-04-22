@@ -1,0 +1,11 @@
+.img-thumbnail {
+    max-width: 50% !important;
+    background-color: #7c7979;
+}
+
+td, tr {
+    background-color: rgb(240, 243, 243) !important;
+    text-align: center;
+    border-color: #7c7979 !important;
+    width: 20%;
+}
