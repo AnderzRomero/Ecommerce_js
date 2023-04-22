@@ -123,7 +123,7 @@ irCarrito.onclick = () => {
 
     carrito.forEach(prod => {
         tbody.innerHTML += `
-        <tr>            
+        <tr class="align-middle">            
             <td><img src="${prod.image}" class="img-thumbnail" alt="${prod.nombre}"></td>
             <td>${prod.nombre}</td>
             <td>${prod.cantidad}</td>
